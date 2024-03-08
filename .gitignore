@@ -396,3 +396,42 @@ FodyWeavers.xsd
 
 # JetBrains Rider
 *.sln.iml
+
+
+# Ignore build artifacts
+/dist/
+/node_modules/
+
+# Ignore environment-specific files (e.g., API keys, secrets)
+/src/environments/*.prod.ts
+/src/environments/*.dev.ts
+
+# Ignore generated files
+*.js
+*.js.map
+*.d.ts
+
+# Ignore editor and IDE-specific files
+.vscode/
+.idea/
+*.suo
+*.user
+*.userosscache
+*.sln.docstates
+*.userprefs
+
+# Ignore package-lock.json (use package.json instead)
+package-lock.json
+
+# Ignore logs and temporary files
+logs/
+*.log
+*.tmp
+
+# Ignore compiled TypeScript files
+*.js
+*.js.map
+
+# Ignore test results
+/test-results/
+
