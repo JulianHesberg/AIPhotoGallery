@@ -1,0 +1,6 @@
+<div class="container">
+  <input type="file" (change)="onFileSelected($event)" *ngIf="!selectedImage">
+  <img [src]="imagePreview" *ngIf="imagePreview">
+  <button (click)="onUpload()" *ngIf="selectedImage">Upload Image</button>
+  <button (click)="onChooseDifferentImage()" *ngIf="selectedImage">Choose a Different Image</button>
+</div>

@@ -1,0 +1,12 @@
+<!-- navbar.component.html -->
+<nav class="navbar">
+  <div class="left">
+    <span class="categories" (click)="toggleMenu()">Categories</span>
+    <mat-menu [overlapTrigger]="false" *ngIf="showMenu">
+      <button mat-menu-item *ngFor="let category of categories">{{ category }}</button>
+    </mat-menu>
+  </div>
+  <div class="right">
+    <span class="add-image" (click)="clickAddImage()">Add Image<span class="plus">+</span></span>
+  </div>
+</nav>

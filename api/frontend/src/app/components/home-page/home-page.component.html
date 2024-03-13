@@ -1,1 +1,20 @@
-<p>home-page works!</p>
+<div class="container">
+  <nav class="navbar">
+    <div class="navbar-center">
+      <span class="title">Welcome to Categorized Photo Gallery</span>
+    </div>
+    <div class="navbar-right">
+      <span class="add-image" (click)="addImage()">Add Image +</span>
+    </div>
+  </nav>
+  <div class="sidebar">
+    <ul>
+      <li *ngFor="let category of categories">
+        <span class="categories" (click)="categoryClicked(category)">{{ category }}</span>
+      </li>
+    </ul>
+  </div>
+  <div class="content">
+    <!-- Your content goes here -->
+  </div>
+</div>

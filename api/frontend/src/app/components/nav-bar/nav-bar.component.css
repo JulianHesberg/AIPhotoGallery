@@ -1,0 +1,49 @@
+/* navbar.component.css */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #333; /* Dark grey/black background */
+  color: white;
+  padding: 10px 20px;
+}
+
+  .navbar:hover {
+    background-color: #333; /* Keep the background color unchanged on hover */
+  }
+
+.left {
+  position: relative;
+}
+
+.categories {
+  cursor: pointer;
+  transition: color 0.3s;
+}
+
+.menu {
+  position: absolute;
+  top: 30px; /* Adjust the top position as needed */
+  left: 0;
+  background-color: #333;
+  color: white;
+  padding: 10px;
+  display: none;
+}
+
+.categories:hover {
+  color: #333; /* Change text color to match the bar color on hover */
+}
+
+.menu .category {
+  margin-bottom: 5px;
+}
+
+.add-image {
+  margin-right: 10px; /* Add spacing between "Add Image" and "+" */
+  cursor: pointer;
+}
+
+.plus {
+  margin-left: 5px;
+}
