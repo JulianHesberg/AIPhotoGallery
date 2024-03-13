@@ -61,10 +61,11 @@
 
 .categories {
   cursor: pointer;
-  color: #423E37;
+  color: #EDEBD7;
+  
 }
   .categories:hover {
-    color: #EDEBD7;
+    color: #423E37;
   }
 
 .sidebar ul {
