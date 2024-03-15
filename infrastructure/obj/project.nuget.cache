@@ -1,8 +1,13 @@
 {
   "version": 2,
-  "dgSpecHash": "DSoR/H7njYIkZEZg8QLm4643ZVJb0/9e/+sANHTmKOJpt9SL5k+4849NZX3HJJeV9f4nvO73O8ITzt1IOkv25A==",
+  "dgSpecHash": "B0m3Yr4Q3N1LM1WoVUET3iQaRJLgvXYEk8rgB+zWMn1Ej9vdtILhK9otgpQHsaivcZpv7RYNbinU1m0LsAOToQ==",
   "success": true,
   "projectFilePath": "C:\\Users\\julia\\source\\repos\\AIPhotoGallery\\infrastructure\\infrastructure.csproj",
-  "expectedPackageFiles": [],
+  "expectedPackageFiles": [
+    "C:\\Users\\julia\\.nuget\\packages\\dapper\\2.1.35\\dapper.2.1.35.nupkg.sha512",
+    "C:\\Users\\julia\\.nuget\\packages\\microsoft.extensions.dependencyinjection.abstractions\\8.0.0\\microsoft.extensions.dependencyinjection.abstractions.8.0.0.nupkg.sha512",
+    "C:\\Users\\julia\\.nuget\\packages\\microsoft.extensions.logging.abstractions\\8.0.0\\microsoft.extensions.logging.abstractions.8.0.0.nupkg.sha512",
+    "C:\\Users\\julia\\.nuget\\packages\\npgsql\\8.0.2\\npgsql.8.0.2.nupkg.sha512"
+  ],
   "logs": []
 }
