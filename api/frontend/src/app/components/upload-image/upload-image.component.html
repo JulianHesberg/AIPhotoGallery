@@ -1,6 +1,7 @@
 <div class="container">
-  <input type="file" (change)="onFileSelected($event)" *ngIf="!selectedImage">
+  <input type="file" id="file" style="display: none;" (change)="onFileSelected($event)" *ngIf="!selectedImage">
+  <label for="file" class="file-label" *ngIf="!selectedImage">Choose File</label>
   <img [src]="imagePreview" *ngIf="imagePreview">
-  <button (click)="onUpload()" *ngIf="selectedImage">Upload Image</button>
-  <button (click)="onChooseDifferentImage()" *ngIf="selectedImage">Choose a Different Image</button>
+  <button class="upload-button" (click)="onUpload()" *ngIf="selectedImage">Upload Image</button>
+  <button class="different-button" (click)="onChooseDifferentImage()" *ngIf="selectedImage">Choose a Different Image</button>
 </div>
