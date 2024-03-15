@@ -244,32 +244,35 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\Abdulkader\\.nuget\\packages\\": {}
+    "C:\\Users\\julia\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "E:\\School\\AIPhotoGallery\\service\\service.csproj",
+      "projectUniqueName": "C:\\Users\\julia\\source\\repos\\AIPhotoGallery\\service\\service.csproj",
       "projectName": "service",
-      "projectPath": "E:\\School\\AIPhotoGallery\\service\\service.csproj",
-      "packagesPath": "C:\\Users\\Abdulkader\\.nuget\\packages\\",
-      "outputPath": "E:\\School\\AIPhotoGallery\\service\\obj\\",
+      "projectPath": "C:\\Users\\julia\\source\\repos\\AIPhotoGallery\\service\\service.csproj",
+      "packagesPath": "C:\\Users\\julia\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\julia\\source\\repos\\AIPhotoGallery\\service\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\Abdulkader\\AppData\\Roaming\\NuGet\\NuGet.Config"
+        "C:\\Users\\julia\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
         "net8.0"
       ],
       "sources": {
+        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+        "C:\\Program Files\\dotnet\\library-packs": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
         "net8.0": {
           "targetAlias": "net8.0",
           "projectReferences": {
-            "E:\\School\\AIPhotoGallery\\infrastructure\\infrastructure.csproj": {
-              "projectPath": "E:\\School\\AIPhotoGallery\\infrastructure\\infrastructure.csproj"
+            "C:\\Users\\julia\\source\\repos\\AIPhotoGallery\\infrastructure\\infrastructure.csproj": {
+              "projectPath": "C:\\Users\\julia\\source\\repos\\AIPhotoGallery\\infrastructure\\infrastructure.csproj"
             }
           }
         }
@@ -278,9 +281,6 @@
         "warnAsError": [
           "NU1605"
         ]
-      },
-      "restoreAuditProperties": {
-        "enableAudit": "default"
       }
     },
     "frameworks": {
@@ -302,7 +302,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.100-preview.7.23376.3\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.201/PortableRuntimeIdentifierGraph.json"
       }
     }
   }

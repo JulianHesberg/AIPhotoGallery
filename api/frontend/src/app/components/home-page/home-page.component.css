@@ -1,0 +1,78 @@
+.container {
+  display: flex;
+  flex-direction: row;
+  height: 100vh;
+}
+
+.navbar {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  height: 50px;
+  display: flex;
+  justify-content: space-between;
+  background-color: #6E675F;
+}
+
+.navbar-center {
+    justify-self: center;
+    align-self: center;
+    margin-left: 25px;
+}
+.title {
+  color: #EDEBD7;
+  font-size: 20px;
+}
+
+.navbar-right {
+  align-self: center;
+  cursor: pointer;
+  margin-right: 25px;
+}
+
+
+.sidebar {
+  position: fixed;
+  top: 50px; /* Adjust according to the height of your navbar */
+  width: 20%;
+  height: calc(100vh - 50px); /* Adjust according to the height of your navbar */
+  overflow: auto;
+  background-color: #A39594;
+}
+
+.content {
+  margin-left: 20%; /* Adjust according to the width of your sidebar */
+  padding-top: 60px; /* Adjust according to the height of your navbar */
+  width: 80%; /* Adjust according to the width of your sidebar */
+  height: calc(100vh - 60px); /* Adjust according to the height of your navbar */
+  overflow: auto;
+  background-color: #EDEBD7;
+}
+
+.add-image {
+  margin-right: 10px; /* Add spacing between "Add Image" and "+" */
+  cursor: pointer;
+  color: #EDEBD7;
+}
+
+.add-image:hover{
+    color: white;
+}
+
+.categories {
+  cursor: pointer;
+  color: #423E37;
+}
+  .categories:hover {
+    color: #EDEBD7;
+  }
+
+.sidebar ul {
+  list-style-type: none; /* This removes the bullet points */
+  padding: 0;
+  margin-left: 25px;
+}
+
+.sidebar li {
+    margin-top: 10px;
+}
