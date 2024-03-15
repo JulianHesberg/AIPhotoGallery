@@ -10,7 +10,6 @@ public class ImageController : ControllerBase
 {
 
     private readonly ImageService _service;
-
     public ImageController(ImageService imageService)
     {
         _service = imageService;

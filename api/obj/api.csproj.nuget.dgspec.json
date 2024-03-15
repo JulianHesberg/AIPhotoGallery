@@ -1,33 +1,39 @@
 {
   "format": 1,
   "restore": {
-    "E:\\School\\AIPhotoGallery\\api\\api.csproj": {}
+    "C:\\Users\\abual\\OneDrive\\Skrivebord\\AIPhotoGallery\\api\\api.csproj": {}
   },
   "projects": {
-    "E:\\School\\AIPhotoGallery\\api\\api.csproj": {
+    "C:\\Users\\abual\\OneDrive\\Skrivebord\\AIPhotoGallery\\api\\api.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "E:\\School\\AIPhotoGallery\\api\\api.csproj",
+        "projectUniqueName": "C:\\Users\\abual\\OneDrive\\Skrivebord\\AIPhotoGallery\\api\\api.csproj",
         "projectName": "api",
-        "projectPath": "E:\\School\\AIPhotoGallery\\api\\api.csproj",
-        "packagesPath": "C:\\Users\\Abdulkader\\.nuget\\packages\\",
-        "outputPath": "E:\\School\\AIPhotoGallery\\api\\obj\\",
+        "projectPath": "C:\\Users\\abual\\OneDrive\\Skrivebord\\AIPhotoGallery\\api\\api.csproj",
+        "packagesPath": "C:\\Users\\abual\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\abual\\OneDrive\\Skrivebord\\AIPhotoGallery\\api\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
         "configFilePaths": [
-          "C:\\Users\\Abdulkader\\AppData\\Roaming\\NuGet\\NuGet.Config"
+          "C:\\Users\\abual\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
           "net8.0"
         ],
         "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
           "net8.0": {
             "targetAlias": "net8.0",
             "projectReferences": {
-              "E:\\School\\AIPhotoGallery\\service\\service.csproj": {
-                "projectPath": "E:\\School\\AIPhotoGallery\\service\\service.csproj"
+              "C:\\Users\\abual\\OneDrive\\Skrivebord\\AIPhotoGallery\\service\\service.csproj": {
+                "projectPath": "C:\\Users\\abual\\OneDrive\\Skrivebord\\AIPhotoGallery\\service\\service.csproj"
               }
             }
           }
@@ -36,9 +42,6 @@
           "warnAsError": [
             "NU1605"
           ]
-        },
-        "restoreAuditProperties": {
-          "enableAudit": "default"
         }
       },
       "frameworks": {
@@ -69,26 +72,32 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.100-preview.7.23376.3\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.100/PortableRuntimeIdentifierGraph.json"
         }
       }
     },
-    "E:\\School\\AIPhotoGallery\\infrastructure\\infrastructure.csproj": {
+    "C:\\Users\\abual\\OneDrive\\Skrivebord\\AIPhotoGallery\\infrastructure\\infrastructure.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "E:\\School\\AIPhotoGallery\\infrastructure\\infrastructure.csproj",
+        "projectUniqueName": "C:\\Users\\abual\\OneDrive\\Skrivebord\\AIPhotoGallery\\infrastructure\\infrastructure.csproj",
         "projectName": "infrastructure",
-        "projectPath": "E:\\School\\AIPhotoGallery\\infrastructure\\infrastructure.csproj",
-        "packagesPath": "C:\\Users\\Abdulkader\\.nuget\\packages\\",
-        "outputPath": "E:\\School\\AIPhotoGallery\\infrastructure\\obj\\",
+        "projectPath": "C:\\Users\\abual\\OneDrive\\Skrivebord\\AIPhotoGallery\\infrastructure\\infrastructure.csproj",
+        "packagesPath": "C:\\Users\\abual\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\abual\\OneDrive\\Skrivebord\\AIPhotoGallery\\infrastructure\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
         "configFilePaths": [
-          "C:\\Users\\Abdulkader\\AppData\\Roaming\\NuGet\\NuGet.Config"
+          "C:\\Users\\abual\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
           "net8.0"
         ],
         "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -101,9 +110,6 @@
           "warnAsError": [
             "NU1605"
           ]
-        },
-        "restoreAuditProperties": {
-          "enableAudit": "default"
         }
       },
       "frameworks": {
@@ -135,34 +141,40 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.100-preview.7.23376.3\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.100/PortableRuntimeIdentifierGraph.json"
         }
       }
     },
-    "E:\\School\\AIPhotoGallery\\service\\service.csproj": {
+    "C:\\Users\\abual\\OneDrive\\Skrivebord\\AIPhotoGallery\\service\\service.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "E:\\School\\AIPhotoGallery\\service\\service.csproj",
+        "projectUniqueName": "C:\\Users\\abual\\OneDrive\\Skrivebord\\AIPhotoGallery\\service\\service.csproj",
         "projectName": "service",
-        "projectPath": "E:\\School\\AIPhotoGallery\\service\\service.csproj",
-        "packagesPath": "C:\\Users\\Abdulkader\\.nuget\\packages\\",
-        "outputPath": "E:\\School\\AIPhotoGallery\\service\\obj\\",
+        "projectPath": "C:\\Users\\abual\\OneDrive\\Skrivebord\\AIPhotoGallery\\service\\service.csproj",
+        "packagesPath": "C:\\Users\\abual\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\abual\\OneDrive\\Skrivebord\\AIPhotoGallery\\service\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
         "configFilePaths": [
-          "C:\\Users\\Abdulkader\\AppData\\Roaming\\NuGet\\NuGet.Config"
+          "C:\\Users\\abual\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
           "net8.0"
         ],
         "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
           "net8.0": {
             "targetAlias": "net8.0",
             "projectReferences": {
-              "E:\\School\\AIPhotoGallery\\infrastructure\\infrastructure.csproj": {
-                "projectPath": "E:\\School\\AIPhotoGallery\\infrastructure\\infrastructure.csproj"
+              "C:\\Users\\abual\\OneDrive\\Skrivebord\\AIPhotoGallery\\infrastructure\\infrastructure.csproj": {
+                "projectPath": "C:\\Users\\abual\\OneDrive\\Skrivebord\\AIPhotoGallery\\infrastructure\\infrastructure.csproj"
               }
             }
           }
@@ -171,9 +183,6 @@
           "warnAsError": [
             "NU1605"
           ]
-        },
-        "restoreAuditProperties": {
-          "enableAudit": "default"
         }
       },
       "frameworks": {
@@ -195,7 +204,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.100-preview.7.23376.3\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.100/PortableRuntimeIdentifierGraph.json"
         }
       }
     }

@@ -1,17 +1,20 @@
+using infrastructure.db_connection;
 using infrastructure.repositories;
 using service.services;
 
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
+builder.Services.AddSingleton<ConnectionManager>();
+builder.Services.AddSingleton<ImageRepository>();
+builder.Services.AddSingleton<ImageService>();
 
 builder.Services.AddControllers();
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 
-builder.Services.AddScoped<ImageRepository>();
-builder.Services.AddScoped<ImageService>();
+
 
 var app = builder.Build();
 
