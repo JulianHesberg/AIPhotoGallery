@@ -1,8 +1,13 @@
 {
   "version": 2,
-  "dgSpecHash": "DnPOe26U1EcQGbrgBUyo8iAjS+KHU9WmZndBycq5LcSEuaHUn+sX0aY8E7vGhIlpC580OanyatfA0BNLKrImmw==",
+  "dgSpecHash": "LnXqZv4VDrE89AzUFk5ZZo2DwuPQ8tzBF9O0+YPMxuNeBEuyi8rxkJICsnzzZfSNfw2LTKxDJJeAQy+P5+w5rw==",
   "success": true,
-  "projectFilePath": "C:\\Users\\julia\\source\\repos\\AIPhotoGallery\\service\\service.csproj",
-  "expectedPackageFiles": [],
+  "projectFilePath": "E:\\School\\AIPhotoGallery\\service\\service.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\Abdulkader\\.nuget\\packages\\dapper\\2.1.35\\dapper.2.1.35.nupkg.sha512",
+    "C:\\Users\\Abdulkader\\.nuget\\packages\\microsoft.extensions.dependencyinjection.abstractions\\8.0.0\\microsoft.extensions.dependencyinjection.abstractions.8.0.0.nupkg.sha512",
+    "C:\\Users\\Abdulkader\\.nuget\\packages\\microsoft.extensions.logging.abstractions\\8.0.0\\microsoft.extensions.logging.abstractions.8.0.0.nupkg.sha512",
+    "C:\\Users\\Abdulkader\\.nuget\\packages\\npgsql\\8.0.2\\npgsql.8.0.2.nupkg.sha512"
+  ],
   "logs": []
 }
