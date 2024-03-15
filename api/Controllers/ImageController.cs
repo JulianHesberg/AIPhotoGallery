@@ -55,6 +55,23 @@ public class ImageController : ControllerBase
             return StatusCode(500, $"Internal server error: {ex.Message}");
         }
     }
+    [HttpGet("GetByCategory")]
+    public IActionResult GetByCategory(string category)
+    {
+        try
+        {
+            var images = _service.GetImageByCategory(category);
+            if (images == null)
+            {
+                return NotFound("No images found for the specified category");
+            }
+            return Ok(images);
+        }
+        catch (Exception ex)
+        {
+            return StatusCode(500, $"Internal server error: {ex.Message}");
+        }
+    }
 
     [HttpPost("AddImage")]
     public IActionResult AddImage([FromBody] AiImages aiImages)
