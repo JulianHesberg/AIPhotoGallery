@@ -22,6 +22,11 @@ namespace service.services
             return _repository.GetById(id);
         }
 
+        public AiImages GetImageByCategory(String category)
+        {
+            return _repository.GetByCategory(category);
+        }
+
         public void CreateImage(AiImages image)
         {
             if (image == null)
