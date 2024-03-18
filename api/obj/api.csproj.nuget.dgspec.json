@@ -1,24 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\abual\\OneDrive\\Skrivebord\\AIPhotoGallery\\api\\api.csproj": {}
+    "C:\\Users\\julia\\source\\repos\\AIPhotoGallery\\api\\api.csproj": {}
   },
   "projects": {
-    "C:\\Users\\abual\\OneDrive\\Skrivebord\\AIPhotoGallery\\api\\api.csproj": {
+    "C:\\Users\\julia\\source\\repos\\AIPhotoGallery\\api\\api.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\abual\\OneDrive\\Skrivebord\\AIPhotoGallery\\api\\api.csproj",
+        "projectUniqueName": "C:\\Users\\julia\\source\\repos\\AIPhotoGallery\\api\\api.csproj",
         "projectName": "api",
-        "projectPath": "C:\\Users\\abual\\OneDrive\\Skrivebord\\AIPhotoGallery\\api\\api.csproj",
-        "packagesPath": "C:\\Users\\abual\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\abual\\OneDrive\\Skrivebord\\AIPhotoGallery\\api\\obj\\",
+        "projectPath": "C:\\Users\\julia\\source\\repos\\AIPhotoGallery\\api\\api.csproj",
+        "packagesPath": "C:\\Users\\julia\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\julia\\source\\repos\\AIPhotoGallery\\api\\obj\\",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
-        ],
         "configFilePaths": [
-          "C:\\Users\\abual\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Users\\julia\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -26,14 +22,15 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
           "net8.0": {
             "targetAlias": "net8.0",
             "projectReferences": {
-              "C:\\Users\\abual\\OneDrive\\Skrivebord\\AIPhotoGallery\\service\\service.csproj": {
-                "projectPath": "C:\\Users\\abual\\OneDrive\\Skrivebord\\AIPhotoGallery\\service\\service.csproj"
+              "C:\\Users\\julia\\source\\repos\\AIPhotoGallery\\service\\service.csproj": {
+                "projectPath": "C:\\Users\\julia\\source\\repos\\AIPhotoGallery\\service\\service.csproj"
               }
             }
           }
@@ -51,6 +48,18 @@
             "Azure.Storage.Blobs": {
               "target": "Package",
               "version": "[12.19.1, )"
+            },
+            "Microsoft.Azure.CognitiveServices.Vision.CustomVision.Prediction": {
+              "target": "Package",
+              "version": "[2.0.0, )"
+            },
+            "Microsoft.Azure.CognitiveServices.Vision.CustomVision.Training": {
+              "target": "Package",
+              "version": "[2.1.0-preview, )"
+            },
+            "Newtonsoft.Json": {
+              "target": "Package",
+              "version": "[13.0.3, )"
             },
             "Swashbuckle.AspNetCore": {
               "target": "Package",
@@ -76,25 +85,21 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.100/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.201/PortableRuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Users\\abual\\OneDrive\\Skrivebord\\AIPhotoGallery\\infrastructure\\infrastructure.csproj": {
+    "C:\\Users\\julia\\source\\repos\\AIPhotoGallery\\infrastructure\\infrastructure.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\abual\\OneDrive\\Skrivebord\\AIPhotoGallery\\infrastructure\\infrastructure.csproj",
+        "projectUniqueName": "C:\\Users\\julia\\source\\repos\\AIPhotoGallery\\infrastructure\\infrastructure.csproj",
         "projectName": "infrastructure",
-        "projectPath": "C:\\Users\\abual\\OneDrive\\Skrivebord\\AIPhotoGallery\\infrastructure\\infrastructure.csproj",
-        "packagesPath": "C:\\Users\\abual\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\abual\\OneDrive\\Skrivebord\\AIPhotoGallery\\infrastructure\\obj\\",
+        "projectPath": "C:\\Users\\julia\\source\\repos\\AIPhotoGallery\\infrastructure\\infrastructure.csproj",
+        "packagesPath": "C:\\Users\\julia\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\julia\\source\\repos\\AIPhotoGallery\\infrastructure\\obj\\",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
-        ],
         "configFilePaths": [
-          "C:\\Users\\abual\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Users\\julia\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -102,6 +107,7 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -145,25 +151,21 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.100/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.201/PortableRuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Users\\abual\\OneDrive\\Skrivebord\\AIPhotoGallery\\service\\service.csproj": {
+    "C:\\Users\\julia\\source\\repos\\AIPhotoGallery\\service\\service.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\abual\\OneDrive\\Skrivebord\\AIPhotoGallery\\service\\service.csproj",
+        "projectUniqueName": "C:\\Users\\julia\\source\\repos\\AIPhotoGallery\\service\\service.csproj",
         "projectName": "service",
-        "projectPath": "C:\\Users\\abual\\OneDrive\\Skrivebord\\AIPhotoGallery\\service\\service.csproj",
-        "packagesPath": "C:\\Users\\abual\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\abual\\OneDrive\\Skrivebord\\AIPhotoGallery\\service\\obj\\",
+        "projectPath": "C:\\Users\\julia\\source\\repos\\AIPhotoGallery\\service\\service.csproj",
+        "packagesPath": "C:\\Users\\julia\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\julia\\source\\repos\\AIPhotoGallery\\service\\obj\\",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
-        ],
         "configFilePaths": [
-          "C:\\Users\\abual\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Users\\julia\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -171,14 +173,15 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
           "net8.0": {
             "targetAlias": "net8.0",
             "projectReferences": {
-              "C:\\Users\\abual\\OneDrive\\Skrivebord\\AIPhotoGallery\\infrastructure\\infrastructure.csproj": {
-                "projectPath": "C:\\Users\\abual\\OneDrive\\Skrivebord\\AIPhotoGallery\\infrastructure\\infrastructure.csproj"
+              "C:\\Users\\julia\\source\\repos\\AIPhotoGallery\\infrastructure\\infrastructure.csproj": {
+                "projectPath": "C:\\Users\\julia\\source\\repos\\AIPhotoGallery\\infrastructure\\infrastructure.csproj"
               }
             }
           }
@@ -208,7 +211,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.100/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.201/PortableRuntimeIdentifierGraph.json"
         }
       }
     }
