@@ -31,13 +31,13 @@ namespace infrastructure.repositories
             }
         }
 
-        public AiImages GetByCategory(String category)
+        public IEnumerable<AiImages> GetByCategory(String category)
         {
             var sql = "SELECT * FROM ai_images WHERE category = @category";
 
             using (var con = _Connection.GetConnection().OpenConnection())
             {
-                return con.QueryFirstOrDefault<AiImages>(sql, new { Category = category });
+                return con.Query<AiImages>(sql, new { Category = category });
             }
         }
         
@@ -56,7 +56,7 @@ namespace infrastructure.repositories
 
             using (var con = _Connection.GetConnection().OpenConnection())
             {
-                con.Execute(sql, aiImages);
+                con.Execute(sql, new {Category = aiImages.Category, ImageUrl = aiImages.ImageUrl, ImageId = aiImages.ImageId });
             }
         }
         

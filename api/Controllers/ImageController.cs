@@ -36,8 +36,7 @@ public class ImageController : ControllerBase
         {
             return StatusCode(500, ex.Message);
         }
-
-} 
+    } 
     [HttpGet("GetImageById")]
     public IActionResult GetImageById(int id)
     {
@@ -91,19 +90,14 @@ public class ImageController : ControllerBase
         }
     }
 
-    [HttpPut("{id}")]
-    public IActionResult UpdateImage(int id, [FromBody] AiImages aiImages)
+    [HttpPut]
+    public IActionResult UpdateImage([FromBody] AiImages aiImages)
     {
         try
         {
-            if (aiImages == null || id != aiImages.ImageId)
+            if (aiImages == null)
             {
                 return BadRequest();
-            }
-            var existingImage = _service.GetImageById(id);
-            if (existingImage == null)
-            {
-                return NotFound();
             }
             _service.UpdateImage(aiImages);
             return NoContent();
@@ -119,11 +113,6 @@ public class ImageController : ControllerBase
     {
         try
         {
-            var existingImage = _service.GetImageById(id);
-            if (existingImage == null)
-            {
-                return NotFound();
-            }
             _service.DeleteImage(id);
             return NoContent();
         }
