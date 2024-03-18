@@ -34,9 +34,9 @@ public class ConnectionManager
         }
         
     }
-    public NpgsqlConnection GetConnection()
+    public NpgsqlDataSource GetConnection()
     {
-        return new NpgsqlConnection(ProperlyFormattedConnectionString);
+        return new NpgsqlDataSourceBuilder(ProperlyFormattedConnectionString).Build();
     }
 
 
