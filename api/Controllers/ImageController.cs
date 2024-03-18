@@ -36,8 +36,7 @@ public class ImageController : ControllerBase
         {
             return StatusCode(500, ex.Message);
         }
-
-} 
+    } 
     [HttpGet("GetImageById")]
     public IActionResult GetImageById(int id)
     {
@@ -49,6 +48,23 @@ public class ImageController : ControllerBase
                 return NotFound();
             }
             return Ok(image);
+        }
+        catch (Exception ex)
+        {
+            return StatusCode(500, $"Internal server error: {ex.Message}");
+        }
+    }
+    [HttpGet("GetByCategory")]
+    public IActionResult GetByCategory(string category)
+    {
+        try
+        {
+            var images = _service.GetImageByCategory(category);
+            if (images == null)
+            {
+                return NotFound("No images found for the specified category");
+            }
+            return Ok(images);
         }
         catch (Exception ex)
         {
@@ -74,19 +90,14 @@ public class ImageController : ControllerBase
         }
     }
 
-    [HttpPut("{id}")]
-    public IActionResult UpdateImage(int id, [FromBody] AiImages aiImages)
+    [HttpPut]
+    public IActionResult UpdateImage([FromBody] AiImages aiImages)
     {
         try
         {
-            if (aiImages == null || id != aiImages.ImageId)
+            if (aiImages == null)
             {
                 return BadRequest();
-            }
-            var existingImage = _service.GetImageById(id);
-            if (existingImage == null)
-            {
-                return NotFound();
             }
             _service.UpdateImage(aiImages);
             return NoContent();
@@ -102,11 +113,6 @@ public class ImageController : ControllerBase
     {
         try
         {
-            var existingImage = _service.GetImageById(id);
-            if (existingImage == null)
-            {
-                return NotFound();
-            }
             _service.DeleteImage(id);
             return NoContent();
         }

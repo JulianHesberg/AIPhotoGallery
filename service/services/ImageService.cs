@@ -22,21 +22,18 @@ namespace service.services
             return _repository.GetById(id);
         }
 
+        public IEnumerable<AiImages> GetImageByCategory(String category)
+        {
+            return _repository.GetByCategory(category);
+        }
+
         public void CreateImage(AiImages image)
         {
-            if (image == null)
-            {
-                throw new ArgumentException(nameof(image));
-            }
             _repository.Create(image);
         }
 
         public void UpdateImage(AiImages image)
         {
-            if (image == null)
-            {
-                throw new AggregateException(nameof(image));
-            }
             _repository.Update(image);
         }
 
