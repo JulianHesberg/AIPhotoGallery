@@ -15,6 +15,6 @@
     </ul>
   </div>
   <div class="content">
-    <!-- Your content goes here -->
+    <img *ngFor="let image of images" [src]="image.imageUrl" alt="Image">
   </div>
 </div>

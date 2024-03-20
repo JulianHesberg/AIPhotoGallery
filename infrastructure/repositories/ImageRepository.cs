@@ -16,7 +16,7 @@ namespace infrastructure.repositories
         {
             var sql = "SELECT * FROM ai_images";
 
-            using (var con = _Connection.GetConnection().OpenConnection())
+            using (var con = _Connection.GetConnection())
             {
                 return con.Query<AiImages>(sql);
             }
@@ -25,7 +25,7 @@ namespace infrastructure.repositories
         {
             var sql = "SELECT * FROM ai_images WHERE imageid = @ImageId";
 
-            using (var con = _Connection.GetConnection().OpenConnection())
+            using (var con = _Connection.GetConnection())
             {
                 return con.QueryFirstOrDefault<AiImages>(sql, new { ImageId = imageId });
             }
@@ -35,7 +35,7 @@ namespace infrastructure.repositories
         {
             var sql = "SELECT * FROM ai_images WHERE category = @category";
 
-            using (var con = _Connection.GetConnection().OpenConnection())
+            using (var con = _Connection.GetConnection())
             {
                 return con.Query<AiImages>(sql, new { Category = category });
             }
@@ -45,7 +45,7 @@ namespace infrastructure.repositories
         {
             var sql = "INSERT INTO ai_images (category, imageurl) VALUES (@Category, @ImageUrl)";
 
-            using (var con = _Connection.GetConnection().OpenConnection())
+            using (var con = _Connection.GetConnection())
             {
                 con.Execute(sql, new {category = aiImages.Category, imageurl = aiImages.ImageUrl });
             }
@@ -54,7 +54,7 @@ namespace infrastructure.repositories
         {
             var sql = "UPDATE ai_images SET category = @Category, imageurl = @ImageUrl WHERE imageid = @ImageId";
 
-            using (var con = _Connection.GetConnection().OpenConnection())
+            using (var con = _Connection.GetConnection())
             {
                 con.Execute(sql, new {Category = aiImages.Category, ImageUrl = aiImages.ImageUrl, ImageId = aiImages.ImageId });
             }
@@ -64,7 +64,7 @@ namespace infrastructure.repositories
         {
             var sql = "DELETE FROM ai_images WHERE imageid = @ImageId";
 
-            using (var con = _Connection.GetConnection().OpenConnection())
+            using (var con = _Connection.GetConnection())
             {
                 con.Execute(sql, new { ImageId = imageId });
             }

@@ -16,7 +16,7 @@ public class VisionPredictionController : ControllerBase
     private readonly string? _publishedName = Environment.GetEnvironmentVariable("visionprojectname");
 
     [HttpPost]
-    public async Task<IActionResult> PredictImage([FromBody] string imageUrl)
+    public async Task<IActionResult> PredictImage(string imageUrl)
     {
         var client = new HttpClient();
 

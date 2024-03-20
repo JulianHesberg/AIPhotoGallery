@@ -34,10 +34,18 @@ public class ConnectionManager
         }
         
     }
-    public NpgsqlDataSource GetConnection()
+    public NpgsqlConnection GetConnection()
     {
-        return new NpgsqlDataSourceBuilder(ProperlyFormattedConnectionString).Build();
+        var connString = new NpgsqlConnectionStringBuilder(ProperlyFormattedConnectionString)
+        {
+            Pooling = true, // Enable connection pooling
+            MaxPoolSize = 100, // Maximum number of connections in the pool
+            MinPoolSize = 10 // Minimum number of connections in the pool
+        }.ToString();
+
+        return new NpgsqlConnection(connString);
     }
+
 
 
 }

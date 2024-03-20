@@ -47,6 +47,17 @@
   height: calc(100vh - 60px); /* Adjust according to the height of your navbar */
   overflow: auto;
   background-color: #EDEBD7;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  grid-auto-flow: row dense; /* This enables the backfilling of gaps */
+  gap: 10px;
+}
+
+.content img {
+  max-width: 300px;
+  max-height: 300px;
+  object-fit: cover;
+  margin: 0 10px;
 }
 
 .add-image {
@@ -62,7 +73,7 @@
 .categories {
   cursor: pointer;
   color: #EDEBD7;
-  
+
 }
   .categories:hover {
     color: #423E37;

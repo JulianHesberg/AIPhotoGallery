@@ -1,6 +1,6 @@
 ﻿import {Injectable} from "@angular/core";
 import {HttpClient} from "@angular/common/http";
-import {Observable} from "rxjs";
+import {firstValueFrom, map, Observable, Subject} from "rxjs";
 import {AiImages} from "./app.model";
 
 @Injectable({
@@ -10,21 +10,38 @@ import {AiImages} from "./app.model";
 export class AppService {
   private apiUrl = 'http://localhost:5214/api/';
 
-  constructor(private http : HttpClient) {}
+  allImages: AiImages[] = [];
+  tempImages: AiImages[] = [];
+  private displayedImages = new Subject<AiImages[]>();
 
-  getAllImages() : Observable<AiImages[]>{
-    return this.http.get<AiImages[]>(`${this.apiUrl}Image`);
+  constructor(private http : HttpClient) {
+  }
+
+  getDisplyedImagesListener(){
+    return this.displayedImages;
+  }
+
+  async getAllImages() {
+    const call = this.http.get<AiImages[]>(`${this.apiUrl}Image`);
+    this.allImages = await firstValueFrom<AiImages[]>(call);
   }
   getImageById(id : number) : Observable<AiImages>{
     return this.http.get<AiImages>(`${this.apiUrl}Image/GetImageById?id=${id}`);
   }
 
-  getImagesByCategory(category : string) : Observable<AiImages[]> {
-    return this.http.get<AiImages[]>(`${this.apiUrl}Image/GetByCategory?category=${category}`);
+  getImagesByCategory(category : string)  {
+    this.tempImages = []
+    this.allImages.forEach((image =>{
+      if(image.category == category){
+        this.tempImages.push(image);
+      }
+    }));
+    this.displayedImages.next(this.tempImages);
   }
 
-  addImage(aiImages : AiImages) : Observable<AiImages>{
-    return this.http.post<AiImages>(`${this.apiUrl}Image/AddImage`, aiImages)
+  async addImage(aiImages : AiImages){
+    const call = this.http.post<AiImages>(`${this.apiUrl}Image/AddImage`, aiImages);
+    return await firstValueFrom(call);
   }
 
   updateImage(id : number, aiImages : AiImages){
@@ -33,6 +50,21 @@ export class AppService {
 
   deleteImage(id : number) {
     return this.http.delete<void>(`${this.apiUrl}Image/${id}`)
+  }
+
+  async uploadBlob(formData: FormData) {
+    const call = this.http.post(`http://localhost:5214/uploadfile`, formData, {responseType: 'text'});
+    return await firstValueFrom(call);
+  }
+
+  async getBlob(imageName: string) {
+    const call = this.http.get(`BlobStorageController/GetImage?imageName=${imageName}`, {responseType: 'blob'});
+    return await firstValueFrom(call);
+  }
+
+  async getPrediction(blobUrl: string) {
+    const call = this.http.post(`${this.apiUrl}VisionPrediction?imageUrl=${blobUrl}`, {}, {responseType: 'text'}).pipe(map(response => response as string));
+    return await firstValueFrom<string>(call);
   }
 
 }
